@@ -1,0 +1,44 @@
+body {
+  background-color: #121212;
+}
+
+p {
+  font-size: 1rem;
+
+}
+
+.Main-Header {
+  font-size: 3rem;
+  text-align: center;
+  color: #EDD382;
+  background-color: #222222;
+
+}
+
+.bio-header {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-bottom: 25px;
+}
+
+.bio-section {
+  background-color: #121212;
+  height: 500px;
+}
+
+.bio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EDD382;
+  max-width: 80%;
+  margin: auto;
+  height: 80%;
+}
+
+.bio-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
