@@ -66,5 +66,4 @@ if (questionFive === 'yes' || questionFive === 'y') {
   alert(reallyBadAnswer);
 }
 
-alert(`Your score is ${score}, ${userName});
-
+alert(`Your score is ${score}, ${userName}`);
