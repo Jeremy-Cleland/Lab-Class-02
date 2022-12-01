@@ -2,6 +2,7 @@
 
 let userName = prompt('What is your name?');
 
+// Define Global Score Variable
 let score = 0;
 
 alert(`Welcome to Codito Mojito ${userName}! Good luck! Your current score is: ${score}`);
@@ -66,8 +67,7 @@ if (q5 === 'yes' || q5 === 'y') {
   alert(wrongAnswer);
 }
 
-
-// Question 6
+//  Question 6
 let myAge = '33';
 let q6attempts = 4;
 let q6correctAnswer = false;
@@ -99,6 +99,7 @@ while (q6attempts && !q6correctAnswer) {
     alert(`Please enter a numerical number. You have ${q6attempts} to go.`);
   }
 }
+
 if (q6attempts === 0 && !q6correctAnswer) {
   // console.log('My correct age is 33');
   alert('My correct age is 33');
