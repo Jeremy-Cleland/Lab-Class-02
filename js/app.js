@@ -1,5 +1,5 @@
 'use strict';
-
+// Lab team project
 let userName = prompt('What is your name?');
 
 // Define Global Score Variable
