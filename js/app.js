@@ -17,8 +17,6 @@ function questionOne() {
   }
 }
 
-questionOne();
-
 function questionTwo() {
   let q2 = prompt(`${userName} Are Windows computers better than Apples?`).toLowerCase();
 
@@ -31,10 +29,6 @@ function questionTwo() {
   }
 }
 
-alert(`Your score is ${score}`);
-
-questionTwo();
-
 function questionThree() {
   let q3 = prompt(`${userName}...  Twitter is better now?`).toLowerCase();
 
@@ -46,7 +40,6 @@ function questionThree() {
   }
 }
 
-questionThree();
 
 function questionFour() {
   let q4 = prompt(`${userName} The only thing Facebook has done good for the world was create React?`).toLowerCase();
@@ -60,10 +53,6 @@ function questionFour() {
   }
 }
 
-questionFour();
-
-alert(`Your score is ${score}`);
-
 function questionFive() {
   let q5 = prompt(`${userName}, I have 4 kids? `).toLowerCase();
 
@@ -75,8 +64,6 @@ function questionFive() {
   }
 
 }
-
-questionFive();
 
 function questionSix() {
   let myAge = '33';
@@ -111,33 +98,30 @@ function questionSix() {
     alert('My correct age is 33');
   }
 }
-questionSix();
+
 
 function questionSeven() {
-  let q7attempts = 6;
-  let q7correctAnswer = false;
-  let children = ['Cora', 'Norah', 'Liam', 'Natalie'];
+  let ageAnswer = ['6', '8', '5', '10'];
+  let totalAttempts = 6;
 
-  while (q7attempts && !q7correctAnswer) {
-    let userAnswer = prompt(`Lets see if you can guess one of my childrens names! Good luck with this one! ${q7attempts}.`).toLowerCase();
-    q7attempts--;
-
-    for (let i = 0; i < children.length; i++) {
-      if (userAnswer === children[i]) {
-        q7correctAnswer = true;
-      }
+  for (let i = 0; i < totalAttempts; i++) {
+    let ageGuess = prompt('Guess the ages of any of my children');
+    if (ageAnswer.includes(ageGuess)) {
+      alert(`You answered ${ageGuess} correctly`);
+      score += 5;
+      break;
+    } else {
+      alert('Your answer is incorrect. Try again');
     }
-  }
-
-  if (q7correctAnswer) {
-    alert(`Wow, Crazy! All of my kids names are... ${children}`);
-    score += 5;
-  }
-  else {
-    alert(`Good try! Maybe next time. Here are their names: ${children}.`);
   }
 }
 
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
 questionSeven();
 
 alert(`Thanks for playing ${userName}. You're score was ${score}.`);
