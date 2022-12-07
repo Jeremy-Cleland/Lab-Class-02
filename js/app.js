@@ -44,7 +44,7 @@ function questionThree() {
 function questionFour() {
   let q4 = prompt(`${userName} The only thing Facebook has done good for the world was create React?`).toLowerCase();
 
-  if (q4 === 'yes' || q3 === 'y') {
+  if (q4 === 'yes' || q4 === 'y') {
     alert('Correct');
     score += 5;
   } else {
